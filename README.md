@@ -29,7 +29,7 @@ For serving the batch layer we will use [Splout SQL](http://sploutsql.com) which
  from Hadoop very efficiently. Splout is fast like [ElephantDB](https://github.com/nathanmarz/elephantdb) but it also allows us to execute SQL queries. Using SQL for serving the batch
  layer is convenient as we might want to break-down the counts by hour, day, week, or any arbitrary date period.  
  
-We will also use [Trident](https://github.com/nathanmarz/storm/wiki/Trident-tutorial) to implement the remote service using its DRPC capabilities. [Trident](https://github.com/nathanmarz/storm/wiki/Trident-tutorial) iself will query both the batch layer and the
+We will also use [Trident](https://github.com/nathanmarz/storm/wiki/Trident-tutorial) to implement the remote service using its DRPC capabilities. [Trident](https://github.com/nathanmarz/storm/wiki/Trident-tutorial) itself will query both the batch layer and the
 real-time layer and merge the results.
 
 This is how, conceptually, the overall architecture looks like:
